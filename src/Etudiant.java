@@ -12,19 +12,19 @@ class Etudiant extends PersonneImpl implements IInscription, INote {
     }
 
     public void inscrire(Cours cours) {
-        coursInscrits.add(cours); // Adding the course to the list of enrolled courses
+        coursInscrits.add(cours);
     }
 
     public void abandonner(Cours cours) {
-        coursInscrits.remove(cours); // Removing the course from the list of enrolled courses
+        coursInscrits.remove(cours);
     }
 
     public void attribuerNote(Cours cours, String note) {
-        notes.put(cours, note); // Assigning a grade to a course
+        notes.put(cours, note);
     }
 
     public String getNote(Cours cours) {
-        return notes.get(cours); // Retrieving the grade for a specific course
+        return notes.get(cours);
     }
     public List<Cours> getCoursInscrits() {
         return coursInscrits;

@@ -21,7 +21,7 @@ public class Main {
             System.out.println("0. Quitter");
             System.out.print("Choisissez une option: ");
             int choix = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choix) {
                 case 1:
@@ -59,7 +59,7 @@ public class Main {
         System.out.println("4. Afficher les informations d'un étudiant");
         System.out.print("Choisissez une option: ");
         int choix = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (choix) {
             case 1:
@@ -85,7 +85,7 @@ public class Main {
         System.out.println("2. Afficher les informations d'un professeur");
         System.out.print("Choisissez une option: ");
         int choix = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (choix) {
             case 1:
@@ -105,7 +105,7 @@ public class Main {
         System.out.println("2. Afficher les informations d'un cours");
         System.out.print("Choisissez une option: ");
         int choix = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (choix) {
             case 1:
@@ -125,7 +125,7 @@ public class Main {
         System.out.println("2. Ajouter un cours à un département");
         System.out.print("Choisissez une option: ");
         int choix = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (choix) {
             case 1:
@@ -145,7 +145,7 @@ public class Main {
         System.out.println("2. Afficher les informations d'un événement");
         System.out.print("Choisissez une option: ");
         int choix = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (choix) {
             case 1:
@@ -166,7 +166,7 @@ public class Main {
         System.out.println("3. Afficher les informations d'un club");
         System.out.print("Choisissez une option: ");
         int choix = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         switch (choix) {
             case 1:
@@ -258,7 +258,7 @@ public class Main {
         String id = scanner.nextLine();
         System.out.print("Salaire du professeur: ");
         double salaire = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
         professeurs.add(new Professeur(nom, id, salaire));
         System.out.println("Professeur ajouté avec succès.");
     }
@@ -395,7 +395,7 @@ public class Main {
         }
     }
 
-    // Méthodes utilitaires pour trouver des objets par leur identifiant ou nom
+
 
     private static Etudiant trouverEtudiantParID(String id) {
         for (Etudiant etudiant : etudiants) {
