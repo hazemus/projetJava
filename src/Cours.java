@@ -1,13 +1,12 @@
-
 class Cours {
     private String nomCours;
     private String codeCours;
-    private Professeur enseignant;
+    private Professeur professeur;
 
-    public Cours(String nomCours, String codeCours, Professeur enseignant) {
+    public Cours(String nomCours, String codeCours, Professeur professeur) {
         this.nomCours = nomCours;
         this.codeCours = codeCours;
-        this.enseignant = enseignant;
+        this.professeur = professeur;
     }
 
     public String getNomCours() {
@@ -18,7 +17,7 @@ class Cours {
         return codeCours;
     }
 
-    public Professeur getEnseignant() {
-        return enseignant;
+    public Professeur getProfesseur() {
+        return professeur;
     }
 }
